@@ -14,7 +14,7 @@ categoryID int primary key auto_increment,
 categoryName varchar(50)
 )
 create table books(
-bookID int primary key ,
+bookID int primary key auto_increment,
 categoryID int,
 bookName varchar(50),
 description varchar(255)
@@ -22,7 +22,7 @@ description varchar(255)
  )
  
 create table authors(
-authorID int primary key,
+authorID int primary key auto_increment,
 bookID int,
 authorFullName varchar(255)
 )
